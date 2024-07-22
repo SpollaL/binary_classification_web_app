@@ -1,10 +1,10 @@
-from typing import List, Dict, Tuple, Literal
+
+from typing import Tuple, Literal
 import streamlit as st
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import precision_score, recall_score
-from sklearn.svm import SVC
 from settings import classifiers_settings, strtofun
 
 
@@ -45,7 +45,8 @@ def main():
         """plot metrics
 
         Args:
-            metrics_list (Literal[Confusion Matrix; ROC curve, Precision Recall curve&quot]): list of metrics to plot
+            metrics_list (Literal[Confusion Matrix; ROC curve, Precision Recall curve&quot]):
+                list of metrics to plot
         """
         for metric in metrics_list:
             st.subheader(metric)

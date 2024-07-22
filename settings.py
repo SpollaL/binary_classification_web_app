@@ -10,7 +10,6 @@ strtofun = {
         "Precision Recall curve": PrecisionRecallDisplay,
     }
 
-
 classifiers_settings = {
     "Support Vector Machine (SVM)": {
         "model": SVC, "params": {
